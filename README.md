@@ -1,3 +1,14 @@
+The content and structure of this README are absolutely perfect for an engineering portfolio. It clearly outlines the methodology, shows the results, and highlights the tools used.
+
+However, it looks like **some of the Markdown formatting got stripped out** when you copied or saved it. Without the proper Markdown symbols (like `#` for headers or ````` for code blocks), GitHub will just display everything as one giant wall of plain text, and your truth tables won't align perfectly.
+
+Also, I noticed a tiny typo in your second image link: your folder structure says `mux_verification_wave.png`, but the image tag at the bottom says `mux_wave.png`. If those don't match exactly, the image will show up as a broken link!
+
+Here is the fully repaired, perfectly formatted version. Just copy this entire block and paste it directly into your GitHub editor:
+
+---
+
+```markdown
 # Multi-Level Abstraction Modeling and Equivalence Checking in Verilog
 
 [![Hardware: Verilog](https://img.shields.io/badge/Hardware-Verilog-blue.svg)](#)
@@ -31,11 +42,17 @@ VLSI-Gate-Levels-and-MUX-Design/
     ├── basic_gates_wave.png
     └── mux_verification_wave.png
 
-💻 Part 1: Basic Logic Gates (Dataflow)
+```
+
+---
+
+## 💻 Part 1: Basic Logic Gates (Dataflow)
+
 A single combinatorial module mapping concurrent logic operations for parallel execution. The automated testbench cycles through all possible input combinations to verify functionality.
 
-🖥️ Console Output: Automated Truth Table
-Plaintext
+### 🖥️ Console Output: Automated Truth Table
+
+```text
 =========================================================
 Time	A B | AND	OR	XOR	NAND	NOR	XNOR
 =========================================================
@@ -45,21 +62,26 @@ Time	A B | AND	OR	XOR	NAND	NOR	XNOR
 30000ns	1 1 |  1	1	0	0	0	1
 =========================================================
 Basic Gates Simulation Complete.
-📊 Waveform Verification
-![Basic Gates Simulation](./docs/basic_gates_wave.png)
-💻 Part 2: 2-to-1 Multiplexer Comparative Architectures
+
+```
+
+### 📊 Waveform Verification
+
+---
+
+## 💻 Part 2: 2-to-1 Multiplexer Comparative Architectures
+
 To demonstrate multi-level design abstraction, a 2:1 MUX was modeled in three distinct ways:
 
-Gate-Level: Modeled structural logic connections using primitive hardware instantiations.
+* **Gate-Level:** Modeled structural logic connections using primitive hardware instantiations.
+* **Dataflow:** Modeled via continuous assignment with ternary conditional expressions.
+* **Behavioral:** Modeled using algorithmic procedural logic blocks (`always @(*)`).
 
-Dataflow: Modeled via continuous assignment with ternary conditional expressions.
+### 🖥️ Console Output: Equivalence Checking
 
-Behavioral: Modeled using algorithmic procedural logic blocks (always @(*)).
-
-🖥️ Console Output: Equivalence Checking
 The testbench instantiates all three MUX architectures simultaneously. The synchronized output below proves 100% functional equivalence across all abstraction levels:
 
-Plaintext
+```text
 ======================================================
 Time	sel a b | Beh_Out  Data_Out  Gate_Out
 ======================================================
@@ -73,17 +95,32 @@ Time	sel a b | Beh_Out  Data_Out  Gate_Out
 70000ns	 1  1 1 |    1         1         1
 ======================================================
 Multiplexer Equivalence Simulation Complete.
-📊 Waveform Verification
-![Basic Gates Simulation](./docs/mux_wave.png)
+
+```
+
+### 📊 Waveform Verification
+
 Notice the perfect synchronization of the bottom three output signals, physically proving equivalence.
 
-🛠️ Tools & Technologies Used
-Hardware Description Language: Verilog
+---
 
-Simulation Engine: Mentor Graphics ModelSim
+## 🛠️ Tools & Technologies Used
 
-Development Environment: Visual Studio Code
+* **Hardware Description Language:** Verilog
+* **Simulation Engine:** Mentor Graphics ModelSim
+* **Development Environment:** Visual Studio Code
+* **Methodology:** Hardware Functional Verification / Equivalence Checking
 
-Methodology: Hardware Functional Verification / Equivalence Checking
+---
 
-Developed by Abdul Samad Khan
+*Developed by Abdul Samad Khan*
+
+```
+
+***
+
+### What was fixed:
+1. **Restored the triple backticks (` 
+http://googleusercontent.com/immersive_entry_chip/0
+
+```
