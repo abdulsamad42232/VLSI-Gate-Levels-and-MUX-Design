@@ -1,13 +1,3 @@
-The content and structure of this README are absolutely perfect for an engineering portfolio. It clearly outlines the methodology, shows the results, and highlights the tools used.
-
-However, it looks like **some of the Markdown formatting got stripped out** when you copied or saved it. Without the proper Markdown symbols (like `#` for headers or ````` for code blocks), GitHub will just display everything as one giant wall of plain text, and your truth tables won't align perfectly.
-
-Also, I noticed a tiny typo in your second image link: your folder structure says `mux_verification_wave.png`, but the image tag at the bottom says `mux_wave.png`. If those don't match exactly, the image will show up as a broken link!
-
-Here is the fully repaired, perfectly formatted version. Just copy this entire block and paste it directly into your GitHub editor:
-
----
-
 ```markdown
 # Multi-Level Abstraction Modeling and Equivalence Checking in Verilog
 
