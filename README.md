@@ -1,6 +1,3 @@
----
-
-```markdown
 # Multi-Level Abstraction Modeling and Equivalence Checking in Verilog
 
 [![Hardware: Verilog](https://img.shields.io/badge/Hardware-Verilog-blue.svg)](#)
@@ -17,7 +14,6 @@ The project proves functional equivalence across these architectures using autom
 3. **Automated Verification:** Development of self-checking testbenches utilizing `$monitor` for real-time console truth-table generation.
 
 ---
-
 ## 📁 Repository Structure
 
 ```text
