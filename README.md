@@ -30,3 +30,60 @@ VLSI-Gate-Levels-and-MUX-Design/
 └── docs/                       # Verification outputs and waveforms
     ├── basic_gates_wave.png
     └── mux_verification_wave.png
+
+💻 Part 1: Basic Logic Gates (Dataflow)
+A single combinatorial module mapping concurrent logic operations for parallel execution. The automated testbench cycles through all possible input combinations to verify functionality.
+
+🖥️ Console Output: Automated Truth Table
+Plaintext
+=========================================================
+Time	A B | AND	OR	XOR	NAND	NOR	XNOR
+=========================================================
+0ns	    0 0 |  0	0	0	1	1	1
+10000ns	0 1 |  0	1	1	1	0	0
+20000ns	1 0 |  0	1	1	1	0	0
+30000ns	1 1 |  1	1	0	0	0	1
+=========================================================
+Basic Gates Simulation Complete.
+📊 Waveform Verification
+![Basic Gates Simulation](./docs/basic_gates_wave.png)
+💻 Part 2: 2-to-1 Multiplexer Comparative Architectures
+To demonstrate multi-level design abstraction, a 2:1 MUX was modeled in three distinct ways:
+
+Gate-Level: Modeled structural logic connections using primitive hardware instantiations.
+
+Dataflow: Modeled via continuous assignment with ternary conditional expressions.
+
+Behavioral: Modeled using algorithmic procedural logic blocks (always @(*)).
+
+🖥️ Console Output: Equivalence Checking
+The testbench instantiates all three MUX architectures simultaneously. The synchronized output below proves 100% functional equivalence across all abstraction levels:
+
+Plaintext
+======================================================
+Time	sel a b | Beh_Out  Data_Out  Gate_Out
+======================================================
+0ns	     0  0 0 |    0         0         0
+10000ns	 0  0 1 |    0         0         0
+20000ns	 0  1 0 |    1         1         1
+30000ns	 0  1 1 |    1         1         1
+40000ns	 1  0 0 |    0         0         0
+50000ns	 1  0 1 |    1         1         1
+60000ns	 1  1 0 |    0         0         0
+70000ns	 1  1 1 |    1         1         1
+======================================================
+Multiplexer Equivalence Simulation Complete.
+📊 Waveform Verification
+![Basic Gates Simulation](./docs/mux_wave.png)
+Notice the perfect synchronization of the bottom three output signals, physically proving equivalence.
+
+🛠️ Tools & Technologies Used
+Hardware Description Language: Verilog
+
+Simulation Engine: Mentor Graphics ModelSim
+
+Development Environment: Visual Studio Code
+
+Methodology: Hardware Functional Verification / Equivalence Checking
+
+Developed by Abdul Samad Khan
