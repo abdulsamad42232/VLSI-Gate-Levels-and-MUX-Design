@@ -28,7 +28,7 @@ VLSI-Gate-Levels-and-MUX-Design/
 │   └── tb_mux.v                
 └── docs/                       # Verification outputs and waveforms
     ├── basic_gates_wave.png
-    └── mux_verification_wave.png
+    └── mux_wave.png
 
 ```
 
