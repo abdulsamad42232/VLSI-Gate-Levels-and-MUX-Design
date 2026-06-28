@@ -55,7 +55,7 @@ Basic Gates Simulation Complete.
 
 ### 📊 Waveform Verification
 
-![Basic Gates Simulation](./docs/basic_gates_wave.png)
+![Basic Gates Simulation](docs/basic_gates_wave.png)
 ---
 
 ## 💻 Part 2: 2-to-1 Multiplexer Comparative Architectures
@@ -89,7 +89,7 @@ Multiplexer Equivalence Simulation Complete.
 
 ### 📊 Waveform Verification
 
-![Basic Gates Simulation](./docs/mux_wave.png)
+![Basic Gates Simulation](docs/mux_wave.png)
 Notice the perfect synchronization of the bottom three output signals, physically proving equivalence.
 
 ---
