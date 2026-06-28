@@ -1,0 +1,9 @@
+# ModelSim files
+work/
+msim/
+*.wlf
+*.mpf
+transcript
+
+# VS Code files
+.vscode/``
