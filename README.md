@@ -106,6 +106,3 @@ Notice the perfect synchronization of the bottom three output signals, physicall
 *Developed by Abdul Samad Khan*
 
 ```
-
-***
-```
